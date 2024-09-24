@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hologram</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Linking SwiperJS Script -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+    <body>
+        <!-- Start Header -->
+        <header class="hero" id="Header">
+            <a href="" class="logo"><img src="imgs/hologram_logo.png" alt=""></a>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="#content">Home</a></li>
+                    <li><a href="#product">Workshop</a></li>
+                    <li><a href="#agency">TrustAgency</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li>
+                        <div id="google_translate_element" class="last"></div>
+
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            }
+                        </script>
+            
+                        <script type="text/javascript"
+                            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    </li>
+                    <a href="#" id="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </ul>
+            </nav>
+            <div class="mobile" id="mobile">
+                <a href="#" id="menu">
+                    <i id="bar" class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+                <script>
+                    let cards = document.querySelectorAll('.silver');
+                    cards.forEach(card => {
+                        card.onmousemove = function (e) {
+                            let x = e.pageX - card.offsetLeft;
+                            let y = e.pageY - card.offsetTop;
+
+                            card.style.setProperty('--x', x + 'px');
+                            card.style.setProperty('--y', y + 'px');
+                        }
+                    })
+                </script>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Landing Page -->
+        <div class="content" id="content">
+            <img src="imgs/hologram_landing_page.png" alt="" style="width: 100%; height: 100%;">
+            <div class="info-contact">
+                <a href="#Contact">Contact Us</a>   
+            </div>
+            <div class="silver">
+                <img src="imgs/silver_hologram.png">
+            </div> 
+        </div>
+        <!-- End Landing Page -->
+
+        <!-- Start Product -->
+        <div class="container-product swiper" id="product">
+            <h2 class="main-title">Workshop</h2>
+            <p style="color: white; padding-bottom: 30px;">This Is My Workshop And My Projects</p>
+            <div class="card-wrapper">
+              <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="./imgs/work1.jpg" alt="Card Image" class="card-image" />
+                    <p class="badge">Hologram Sticker</p>
+                    <h2 class="card-title">
+                        This Is The Hologram's Sticker Photo
+
+                    </h2>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="./imgs/work2.jpg" alt="Card Image" class="card-image" />
+                    <p class="badge">Hologram Sticker</p>
+                    <h2 class="card-title">
+                        This Is The Hologram's Sticker Photo
+
+                    </h2>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="./imgs/work3.jpg" alt="Card Image" class="card-image" />
+                    <p class="badge">Hologram Sticker</p>
+                    <h2 class="card-title">
+                        This Is The Hologram's Sticker Photo
+
+                    </h2>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                  <a href="#" class="card-link">
+                    <img src="./imgs/work4.jpg" alt="Card Image" class="card-image" />
+                    <p class="badge">Hologram Sticker</p>
+                    <h2 class="card-title">
+                      This Is The Hologram's Sticker Photo
+                    </h2>
+                  </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work5.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work6.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work7.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work8.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                        This Is The Hologram's Sticker Photo
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work9.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work10.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work11.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work12.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                        This Is The Hologram's Sticker Photo
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work13.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work14.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work15.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work16.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                        This Is The Hologram's Sticker Photo
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work17.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                          This Is The Hologram's Sticker Photo
+  
+                      </h2>
+                    </a>
+                  </li>
+                  <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                      <img src="./imgs/work18.jpg" alt="Card Image" class="card-image" />
+                      <p class="badge">Hologram Sticker</p>
+                      <h2 class="card-title">
+                        This Is The Hologram's Sticker Photo
+                      </h2>
+                    </a>
+                  </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        <!-- End Product -->
+
+        <div class="agency" id="agency">
+            <h2 class="main-title">Succses Partners</h2>
+            <p>The Succses Partners Of My Agecny</p>
+            <div class="container">
+                <div class="box quality">
+                    <div class="img-holder right"><img decoding="async" src="imgs/IMG-20240914-WA0010.jpg" alt="" />
+                    </div>
+                    <h2>Angry Wolf</h2>
+                </div>
+                <div class="box time">
+                    <div class="img-holder left"><img decoding="async" src="imgs/IMG-20240914-WA0009.jpg" alt="" />
+                    </div>
+                    <h2>Al Hafez</h2>
+                </div>
+                <div class="box passion">
+                    <div class="img-holder right"><img decoding="async" src="imgs/IMG-20240914-WA0008.jpg" alt="" />
+                    </div>
+                    <h2>
+                        Dar El Shefa
+                    </h2>
+                </div>
+                <div class="box time">
+                    <div class="img-holder left"><img decoding="async" src="imgs/IMG-20240914-WA0007.jpg" alt="" />
+                    </div>
+                    <h2>Pencak Silat Australia</h2>
+                </div>
+                <div class="box passion">
+                    <div class="img-holder right"><img decoding="async" src="imgs/IMG-20240914-WA0006.jpg" alt="" />
+                    </div>
+                    <h2>Strategic Vision</h2>
+                </div>
+                <div class="box time">
+                    <div class="img-holder left"><img decoding="async" src="imgs/IMG-20240914-WA0005.jpg" alt="" />
+                    </div>
+                    <h2>Arabian Academy</h2>
+                </div>
+                <div class="box passion">
+                    <div class="img-holder right"><img decoding="async" src="imgs/IMG-20240914-WA0004.jpg" alt="" />
+                    </div>
+                    <h2>khalifa foundation investment</h2>
+                </div>
+                <div class="box time">
+                    <div class="img-holder left"><img decoding="async" src="imgs/IMG-20240914-WA0003.jpg" alt="" />
+                    </div>
+                    <h2>DOSSO</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Start About -->
+        <div class="about" id="about">
+            <h2 class="main-title">About Us</h2>
+            <div class="container">
+                <div class="content-about">
+                    <div class="content-info">
+                        <h3>
+                            Designed to fulfill every need of brand protection
+                        </h3>
+                        <p>
+                            Under the hood, Cactus runs a small local web server for each website you're working on.
+                            This makes it possible to build your website locally, using modern web technologies, and
+                            have the results generated to a collection of flat files.
+                        </p>
+                        <div class="button">
+                            <a href="#news">Read More</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/hologram.sticker.eg"><i
+                                class="fab fa-facebook-f facebook"></i></a>
+                        <a href="https://www.youtube.com/@hologramsticker"><i class="fab fa-youtube youtube"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=201145572515"><i
+                                class="fab fa-whatsapp whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="image-about">
+                    <img src="imgs/hologram_landing_page.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+
+        <!-- Start News -->
+        <div id="news" class="workspace">
+            <h2 class="main-title">News</h2>
+            <p>Projects we Are worked on</p>
+            <div class="container">
+                <div class="pro">
+                    <img src="imgs/new1.jpg" alt="">
+                    <div class="design">
+                        <span>The AVI-S London Snapbacks</span>
+                    </div>
+                    <a href="sheet1.html">Reed More</a>
+                </div>
+                <div class="pro">
+                    <img src="imgs/new2.jpg" alt="">
+                    <div class="design">
+                        <span>The Vangon Leds</span>
+                    </div>
+                    <a href="sheet2.html">Reed More</a>
+                </div>
+                <div class="pro">
+                    <img src="imgs/new3.jpg" alt="">
+                    <div class="design">
+                        <span>The Nottie Stickers</span>
+                    </div>
+                    <a href="sheet3.html">Reed More</a>
+                </div>
+            </div>
+        </div>
+        <!-- End News -->
+
+        <!-- Start Quote -->
+        <div class="quote">
+            <div class="container">
+                <q>Those who cheat on their partners who are loyal to them; don't deserve them.</q>
+                <span>Author unknown</span>
+            </div>
+        </div>
+        <!-- End Quote -->
+
+        <!-- Start Videos -->
+        <div class="videos" id="videos">
+            <h2 class="main-title">Top Videos</h2>
+            <div class="imgs-container">
+                <div class="main-video">
+                    <video src="imgs/استيكر هلوجرام علامة مائية يستحيل التقليد ويترك اثر عند النزع.mp4" controls muted
+                        autoplay></video>
+                    <h3 class="title">01. Watermark hologram sticker is impossible to imitate and leaves a trace when removed
+                        <br>0:15
+                    </h3>
+                </div>
+                <div class="list">
+                    <div class="vid active">
+                        <video src="imgs/استيكر هلوجرام علامة مائية يستحيل التقليد ويترك اثر عند النزع.mp4"
+                            muted></video>
+                        <h3 class="title">01. Watermark hologram sticker is impossible to imitate and leaves a trace when removed
+                            <br>(0:15sec)</h3>
+                    </div>
+                    <div class="vid">
+                        <video src="imgs/ستيكر هلوجرام مائية.mp4" muted></video>
+                        <h3 class="title">02. Hologram Sticker Watermark
+                            <br>(0:24sec)
+                        </h3>
+                    </div>
+                    <div class="vid">
+                        <video src="imgs/ملصق أمنى هلوجرام ستيكر علامة مائية.mp4" muted></video>
+                        <h3 class="title">
+                            Original watermark hologram sticker made with your own logo to avoid imitation of printed and special papers
+                            <br>(0:39sec)
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Videos -->
+
+        <!-- Start Video -->
+        <div class="video">
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="imgs/future.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="text">
+                <h2>Super Awesome Video Here</h2>
+                <p>Its All You Need</p>
+                <button><a href="#videos">See More</a></button>
+            </div>
+        </div>
+        <!-- End Video -->
+
+        <!-- Start Testimonials -->
+        <div class="testimonials" id="testimonials">
+            <h2 class="main-title">Feedback</h2>
+            <div class="container">
+                <div class="box">
+                    <img decoding="async" src="imgs/avatar-01.png" alt="" />
+                    <h3>CEO / Hologram Sticker</h3>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>
+                        Whether it’s overall happiness in a country, the unemployment rate, or the participation rate in the latest polls or e-votes, you can view everything on a powerful, customizable dashboard.
+                    </p>
+                </div>
+                <div class="box">
+                    <img decoding="async" src="imgs/avatar-02.png" alt="" />
+                    <h3>CTO / Hologram Sticker</h3>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>
+                        Under the hood, Cactus runs a small local web server for each website you're working on. This makes it possible to build your website locally, using modern web technologies, and have the results generated to a collection of flat files.
+                    </p>
+                </div>
+                <div class="box">
+                    <img decoding="async" src="imgs/avatar-03.png" alt="" />
+                    <h3>CFO / Hologram Sticker</h3>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>
+                        Whether it’s overall happiness in a country, the unemployment rate, or the participation rate in the latest
+                         polls or e-votes,Original watermark hologram sticker made with your logo to avoid
+                         imitation of printed materials
+                    </p>
+                </div>
+                <div class="box">
+                    <img decoding="async" src="imgs/avatar-04.png" alt="" />
+                    <h3>Developre / Hologram</h3>
+                    <span class="title"></span>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                    </div>
+                    <p>
+                        that is impossible to imitate Hologram Sticker It is not
+                        printed with ink and does not erase or scratch your logo In short,
+                        we protect your product and papers from imitation It is used only
+                        once and when you try to remove it, your design disappears and the
+                        word
+                    </p>
+                </div>
+                <div class="box">
+                    <img decoding="async" src="imgs/avatar-05.png" alt="" />
+                    <h3>Founder / Hologram</h3>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>
+                        Whether it’s overall happiness in a country, the unemployment rate, or the participation rate in the latest polls or e-votes, you can view everything on a powerful, customizable dashboard.
+                    </p>
+                </div>
+                <div class="box">
+                    <img decoding="async" src="imgs/avatar-06.png" alt="" />
+                    <h3>Founder / Hologram</h3>
+                    <div class="rate">
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="filled fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>
+                        Under the hood, Cactus runs a small local web server for each website you're working on. This makes it possible to build your website locally, using modern web technologies, and have the results generated to a collection of flat files.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Testimonials -->
+
+        <!-- Start Stats -->
+        <div class="stats" id="stats">
+            <h2>Our Awesome Stats</h2>
+            <div class="container">
+                <div class="box">
+                    <i class="far fa-user fa-2x fa-fw"></i>
+                    <span class="number">300</span>
+                    <span class="text">Clients</span>
+                </div>
+                <div class="box">
+                    <i class="fas fa-code fa-2x fa-fw"></i>
+                    <span class="number">400</span>
+                    <span class="text">Projects</span>
+                </div>
+                <div class="box">
+                    <i class="fas fa-globe-asia fa-2x fa-fw"></i>
+                    <span class="number">12</span>
+                    <span class="text">Countries</span>
+                </div>
+                <div class="box">
+                    <i class="fa-regular fa-note-sticky" style="font-size: 25px;"></i>
+                    <span class="number">5K</span>
+                    <span class="text">Stickres</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Stats -->
+        <!-- Start Contact -->
+        <div class="main-content" id="Contact">
+            <h2 class="main-title">Contact Us</h2>
+            <div id="form-details">
+                <form action="https://formsubmit.co/aom630619@gmail.com" method="post">
+                    <span>LEAVE A MESSAGE</span>
+                    <h2>We Love To Hear From You</h2>
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter E-mail">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="normal">Submit</button>
+                </form>
+                <div class="people">
+                    <h1>Social Media</h1>
+                    <div class="social">
+                        <div>
+                            <a href="https://www.facebook.com/hologram.sticker.eg"><i
+                                    class="fab fa-facebook-f facebook"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://www.youtube.com/@hologramsticker"><i
+                                    class="fab fa-youtube youtube"></i></a>
+                        </div>
+                        <div>
+                            <a href="https://api.whatsapp.com/send?phone=201145572515"><i
+                                    class="fab fa-whatsapp whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <h1>Get In Touch</h1>
+                    <div class="info">
+                        <span class="phone">+20 114 557 2515</span>
+                        <span class="phone">+(2) 011-4557-2515</span>
+                        <address>Awesome Address 2159<br>Zahraa Nasr City,<br>Cairo,Egypt</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!-- Start Footer -->
+        <div class="footer">
+            <div class="container">
+                <img decoding="async" src="imgs/silver_hologram.png" alt="Logo" />
+                <p>We Are Social</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/hologram.sticker.eg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@hologramsticker"><i class="fab fa-youtube"></i></a>
+                    <a href="#hero"><i class="fas fa-home"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=201145572515"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="rnlc-footer">
+                    <p class="copyright">Powered By <span>RNLC</span> &copy; 2024 </p>
+                    <img src="/imgs/Logo_RNLC.png" alt="">
+                </div>
+                <div class="links-rnlc">
+                    <div class="links">
+                        <a href="https://www.facebook.com/profile.php?id=61560481726243&mibextid=ZbWKwL"><i class="fab fa-facebook facebook"></i></a>
+                    <a href="https://www.instagram.com/rnlc_org?igsh=ZGl0NHdwZDF6OWFm"><i class="fab fa-instagram instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaduFBdE50Ucn7Ze191o"><i class="fab fa-whatsapp whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+    </body>
+
+    <!-- Linking SwiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script>
+        let listVideo = document.querySelectorAll('.list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelectorAll('.main-video .title');
+
+        listVideo.forEach(video => {
+            video.onclick = () => {
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if (video.classList.contains('active')) {
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                }
+            }
+        })
+    </script>
+
+</html>
